@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.position{
+	margin: auto;
+	width: 70%;
+	border: none;
+	padding: 10px;
+}
+.t_position{
+	margin: auto;
+	width: 103%;
+	border: none;
+	padding: 10px;
+}
+table {
+
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+
+</style>
+<script>
+function validate()                                    
+{ 
+    var name = document.forms["order"]["pname"];  
+	//var quantity = document.forms["order"]["quantity"];
+	var quantity=document.getElementById("quant").value;
+	var price = document.getElementById("pr").value;
+
+	
+	if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+	if (isNaN(quantity) || quantity < 1 || quantity > 10)                                  
+    { 
+        window.alert("Please enter valid quantity."); 
+        quantity.focus(); 
+        return false; 
+    } 
+	if (isNaN(price) || price < 1 || price > 100000)                                  
+    { 
+        window.alert("Please enter valid price."); 
+        price.focus(); 
+        return false; 
+    } 
+	
+	
+	//return true;
+}
+function multiplyBy()
+{
+       var price= document.getElementById("pr").value; 
+       var quantity= document.getElementById("quant").value; 
+       document.getElementById("tot").value = (price*quantity);
+}
+
+
+</script>
+  </head>
+  <body>
+  <div>
+<div class="position">
+  <form name="order" onsubmit="return validate()" action="test.html" method="get" >
+    <input type="text" id="pname" name="pname" placeholder="Product name" size="94" required><br><br>
+    <input type="text" id="quant" name="quantity" placeholder="Quantity" min="0" max="100" size="94" ><br><br>
+  <input type="text" id="pr" name="price" onblur="multiplyBy()" placeholder="Price" size="94" ><br><br>
+  <input type="text" id="tot" name="total"  placeholder="Total" size="94" ><br><br>
+  
+    <input type="submit" class="btn btn-primary" value="Insert">
+    <input type="submit" class="btn btn-warning" value="Delete All"><br><br>
+  </form>
+  
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+ </div>   
+</div>
+<div class="t_position">
+<table>
+  <tr>
+    <th>Product Name</th>
+    <th>Quantity</th>
+    <th></th>
+  </tr>
+	<tr>
+    <td>Specs</td>
+    <td>20</td>
+    <td><i class="fa fa-trash-o" style="color:red;"></i>&nbsp;&nbsp;<i class="fa fa-edit" ></i></td>
+  </tr>
+  <tr>
+    <td>Pad</td>
+    <td>20</td>
+    <td><i class="fa fa-trash-o" style="color:red;"></i>&nbsp;&nbsp;<i class="fa fa-edit" ></i></td>
+  </tr>
+  <tr>
+    <td>Apple</td>
+    <td>20</td>
+    <td><i class="fa fa-trash-o" style="color:red;"></i>&nbsp;&nbsp;<i class="fa fa-edit" ></i></td>
+  </tr>
+  <tr>
+    <td>Mouse</td>
+    <td>15</td>
+    <td><i class="fa fa-trash-o" style="color:red;"></i>&nbsp;&nbsp;<i class="fa fa-edit" ></i></td>
+  </tr>
+  <tr>
+    <td>Table</td>
+    <td>13</td>
+    <td><i class="fa fa-trash-o" style="color:red;"></i>&nbsp;&nbsp;<i class="fa fa-edit" ></i>	</td>
+  </tr>
+  </tr>
+</div>
+</div>
+
+</body>
+</html>

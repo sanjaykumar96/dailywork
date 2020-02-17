@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:");
+  if (person == null || person == " " || person != "Manish") {
+
+   return myFunction();
+  } else {
+    window.location.href ="form_test.html";
+  }
+   document.getElementById("demo").innerHTML = txt;
+}
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form examples</title>
+<link rel="icon" href="C:\Users\seed\Pictures\cognizant.png">
+<img src="C:\Users\seed\Pictures\cognizant.png">
+</head>
+<body>
+<form  method="post">
+Fname<br><input type="text" name="name" autofocus><br><br>
+Lname<br><input type="text" name="lname" required><br><br>
+<input type="radio" name="gender" value="male" checked>Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+<input type="submit" value="insert">
+</form>
+<br><br><br><br><br><br><br><br><br><br><br>
+<h1>Second Form..</h1>
+<form>
+<fieldset>
+<legend>person information</legend>
+Fname<BR><input type="text" name="fname"><br><br>
+Lname<br><input type="text" name="lname"><br><br>
+<input type="radio" name="gender" value="male" checked>Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+Hobbies<br><input type="checkbox" name="hobby" value="cric">Cricket
+<input type="checkbox" name="hobby" value="sw">Swimming
+<input type="checkbox" name="hobby" value="run">Running<br>
+Password<br>
+<input type="password" name="pwd"><br>
+Select ur car:
+<select name="cars" size="2" multiple>
+<option value="c1">car1</option>
+<option value="c2" selected>car2</option>
+<option>car3</option>
+<option>car4</option>
+</select><br><br><br>
+<textarea name="adr" rows="5" cols="20">Address</textarea>
+select color<input type= "color"><br>
+birth date<input type="date"><br>
+enter a date before 1980-01-01:
+<input type="date" name="bday" max="1979-12-31"><br>
+enter a date after 2000-01-01:
+<input type="date" name="bday" min="2000-01-02"><br>
+quantity:<input type="number" name="points" min="0" max="100" step="10" value="30"><br>
+email:<input type="email" required multiple><br>
+<label>yourcars name</label>
+<input list="cars" id="carsinput">
+<datalist id="cars">
+<option value="BMW"/>
+<option value="bentley"/>
+<option value="mercedes"/>
+<option value="audi"/>
+<option value="volkswagen"/></datalist><br>
+<input type="submit" value="insert"/><br>
+<input type="reset" value="reset"><br>
+<button type="button">Click me</button>
+</fieldset>
+</form>
+</body>
+</html>

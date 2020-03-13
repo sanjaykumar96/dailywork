@@ -1,0 +1,22 @@
+package com.cts.march1;
+
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class EDemo {
+	public void readData() throws IOException {
+		FileReader fr= new FileReader("empty.txt");
+		int i=fr.read();
+		System.out.println("hi"+i);
+	}
+	public void task2() throws IOException{
+		readData();
+		
+	}
+	public static void main(String[] args) {
+		EDemo demo= new EDemo();
+		System.out.println("end of main");
+	}
+
+}

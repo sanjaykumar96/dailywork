@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* function testEquality() {
+	var i=98;
+	var str1="98";
+	
+	if(i==str1){
+		document.write("they are equal");
+	}else{
+		document.write("not equal");
+	}
+}
+testEquality(); */
+/* var a=34;
+console.log(a);
+a=834;
+console.log(a);
+
+const b=34;
+
+console.log(b);
+b=384;
+console.log(b); */
+var cities=["pune","indore","mumbai","latur","banglore"];
+console.log(cities);
+var employee=new Array("rohit","mohit","virushka","pnick");
+
+console.log(employee);
+for(var i=cities.length-1;i>=0;i--){
+	console.log(cities[i]);
+}
+for(var i=employee.length-1;i>=0;i--){
+	console.log(employee[i]);
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

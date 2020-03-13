@@ -1,0 +1,7 @@
+package com.cognizant;
+
+public class Employee extends Person {
+	int empid;
+	String dep;
+
+}

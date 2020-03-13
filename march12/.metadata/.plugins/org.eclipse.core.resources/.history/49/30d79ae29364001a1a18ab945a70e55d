@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<script type="text/javascript">
+var y=function kaiseho(){
+	console.log("moje mai hai");
+	}
+y();
+y();y();
+
+
+</script>
+<body>
+
+</body>
+</html>

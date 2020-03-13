@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title id="tl">this is jeaven  page</title>
+</head>
+<body>
+<h1>this heading</h1>
+<p id="p1"> </p> 
+      
+    <button onclick="changePageTitle()"> 
+        Change Page Title 
+    </button> 
+      
+    <script type="text/javascript"> 
+        /* function changePageTitle() { 
+            newPageTitle = 'The title has changed!'; 
+            document.title = newPageTitle; 
+        }  */
+        
+        function changePageTitle() {
+			document.getElementById("p1").innerHTML="this content is appended dynamically";
+			document.title="web app 20";
+			document.querySelector('title').textContent="Page Title Changed";
+		}
+    </script>
+</body>
+ 
+</html>

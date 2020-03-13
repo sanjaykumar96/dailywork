@@ -1,0 +1,28 @@
+package com.cts.feb26;
+
+public class LambdaExpressionDemo {
+	public static void main(String[] args) {
+//		MyThread t = new MyThread();
+//		Thread thread = new Thread();
+//		thread.start();
+		// *************** Using Lambda Expression ***************
+//		Runnable r = () -> System.out.println("Hello Runnable");
+//		Thread t = new Thread(r);
+//		t.start();
+		Hello h = () -> "Good Morning!";
+		System.out.println(h.greetings());
+	}
+}
+@FunctionalInterface
+interface Hello {
+	String greetings();
+	//public void display();
+}
+//class MyThread implements Runnable {
+//	@Override
+//	public void run() {
+//		System.out.println("Hello Runnable");
+//		
+//	}
+//}
+}

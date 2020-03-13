@@ -1,0 +1,9 @@
+package com.cognizant;
+
+public class B1 extends A1 {
+	public void display()
+	{   @Override
+		System.out .println("b");
+	}
+
+}

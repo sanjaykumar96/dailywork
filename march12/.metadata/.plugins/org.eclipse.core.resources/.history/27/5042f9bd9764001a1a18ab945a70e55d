@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function function1()
+{
+  var variable1=12;
+  console.log("hello fun1");
+  function2(variable1);
+  // return variable1;
+ 
+}
+
+function function2()
+{
+ // var variableOfFunction1 =function1();
+  var variableOfFunction1=val;
+  console.log("hello fun2");
+  console.log(variableOfFunction1);
+  }
+  //function2();
+  function1();
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

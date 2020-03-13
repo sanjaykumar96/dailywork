@@ -1,0 +1,21 @@
+package com.cts.march1;
+
+public class PrintIfElse {
+	 public static void main(String args[])
+	    {
+	        boolean one=true;
+	        for(int i=0;i<2;i++)
+	        {
+	        if(!one)
+	        {
+	            System.out.println("Java");
+	            one=false;  
+	        }   
+	        else
+
+	            System.out.println("I Like");
+
+	        }       
+	    }
+
+}

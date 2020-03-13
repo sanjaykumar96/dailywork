@@ -1,0 +1,9 @@
+package com.cts.feb21;
+
+public class WriteIntoMultipleFiles {
+	public static void main(String[] args) {
+		
+		
+	}
+}
+

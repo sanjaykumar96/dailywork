@@ -1,0 +1,10 @@
+package com.cts.march3;
+
+public class Students {
+	String name;
+    int phyMarks;
+    int mathsMarks;
+    int chemMarks;
+    int total;
+    float per;
+}

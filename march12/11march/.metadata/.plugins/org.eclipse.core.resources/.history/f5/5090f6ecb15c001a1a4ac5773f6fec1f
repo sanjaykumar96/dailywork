@@ -1,0 +1,10 @@
+package com.cts.march1;
+
+public class AcceptInput {
+public static void main(String[] args) {
+	String fname=args[0];
+	String Lname=args[1];
+	System.out.println(fname+Lname);
+	
+}
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="ValidateServlet" method="post">
+		<input type="text" name="un" placeholder="username"> <br>
+		<input type="password" name="pwd" placeholder="enter password"> <br>
+			<input
+			type="Submit" value="form submit karo"><br>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var a = Number(prompt("Enter first number"));
+var b = Number(prompt("Enter second number"));
+alert("total of two number"a + b);
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

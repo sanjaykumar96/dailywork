@@ -1,0 +1,14 @@
+package com.cognizant;
+
+public class TestString {
+	public static void main(String[] args)
+	{
+
+     String s="sanjay";
+     String m="sanjay";
+     s.concat(m);
+     System.out.println(s);
+     
+	}
+
+}

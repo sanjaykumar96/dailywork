@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="if" action="" onsubmit="validate()">
+		FirstName:<input type="text" name="userName" placeholder="Firstname">
+		<br> LastName:<input type="text" name="ln" placeholder="lastName">
+		<br> Password <input type="password" name="pwd" placeholder="enter password">
+			 <br> <input type="Submit" value="submit"><br>
+			
+
+	</form>
+	<script type="text/javascript">
+		function sayHello() {
+			document.write("<h1> hello baba </h1>");
+			document.write("<h1>" +Date() +"</h1>");
+		}
+		
+		function validate() {
+			
+			var name=document.if.userName.value.trim();
+			var password=document.if.pwd.value.trim();
+			if(name==""){
+				alert("userName should not be empty");
+			}
+			if(password==""){
+				alert("password should not be empty");
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+package com.cognizant;
+
+public class Person {
+	String name;
+	String addr;
+	int mobl;
+	
+	public static void main(String[] args)
+	{
+	}
+	
+	
+}
+

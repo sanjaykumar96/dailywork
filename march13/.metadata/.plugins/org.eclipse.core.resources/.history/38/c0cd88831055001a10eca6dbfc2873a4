@@ -1,0 +1,84 @@
+package com.cts.feb21;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class WordFrequency {
+	 public static void main(String[] args) throws FileNotFoundException,IOException {
+			
+			Scanner src = new Scanner(System.in);
+			int choice;
+			do {
+				
+				System.out.println("\n"+"Press 1 to enter content for file."
+						+ "\nPress 2 count number of times word occur."
+						+ "\nPress 3 to exit.");
+				System.out.print("Enter your choice: ");
+				choice = src.nextInt();
+				switch(choice) {
+				case 1:writecontent();
+					break;
+				case 2:wordcount();
+					break;
+				case 3: System.exit(0);
+				}
+			}while (choice != 3);
+		}
+		 
+	   
+
+	private static void writecontent() throws IOException {
+		// TODO Auto-generated method stub
+		BufferedReader br = new BufferedReader(new
+		        InputStreamReader(System.in));
+			String path="C:\\Users\\seed\\Desktop\\outputstram\\input.txt";
+			FileWriter out=new FileWriter(path,true);
+			
+			System.out.println("enter book name");
+			String content = br.readLine();
+           out.write(content+"\n");
+			
+			out.close();
+	}
+
+	private static void wordcount() throws IOException {
+		// TODO Auto-generated method stub
+		
+		String path="C:\\Users\\seed\\Desktop\\outputstram\\input.txt";
+		BufferedReader br = new BufferedReader(new FileReader(path));
+	      String[] words=null; 
+	     
+	      String s; 
+	      String input="sanjay";
+	      int count=0;   
+	      while((s=br.readLine())!=null)   
+	      {
+	         words=s.split(" "); 
+	          for (String word : words) 
+	          {
+	                 if (word.equals(input))   
+	                 {
+	                   count++;    
+	                 }
+	          }
+	      }
+	      if(count!=0)  
+	      {
+	         System.out.println("The given word is present for "+count+ " Times in the file");
+	      }
+	      else
+	      {
+	         System.out.println("The given word is not present in the file");
+	      }
+	      
+	         br.close();
+	   }
+
+	}
+

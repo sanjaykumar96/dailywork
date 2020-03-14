@@ -1,0 +1,39 @@
+package com.cognizant;
+import java.util.*;
+
+public class Count1s {
+	public static void main(String[] args) {
+		Scanner src=new Scanner(System.in);
+		System.out.println("enter number 1s number:  ");
+		int n=src.nextInt();
+		System.out.println("enter number 2nd number:  ");
+		int m=src.nextInt();
+		int i,result=0;
+		while (n <= m) 
+	    { 
+	        // When the last digit is equal to d 
+	        if (n%10 == 1) 
+	            result++; 
+	  
+	        // When the first digit is equal to d then 
+	        if (n!= 0 && n/10 == 1) 
+	        { 
+	            // increment result as well as number 
+	            result++; 
+	            n++; 
+	        } 
+	  
+	        // In case of reverse of number such as 12 and 21 
+	        else if (n/10 == 1-1) 
+	            n= n+ (10 - 1); 
+	        else
+	            n = n+10; 
+	    } 
+	   
+	 System.out.println("total:  "+result);
+	} 
+			
+		
+	
+
+}

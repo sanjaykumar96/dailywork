@@ -1,0 +1,16 @@
+package com.cts.feb21;
+import java.io.FileOutputStream;
+import java.io.File;
+
+
+public class FileInputStramDemo {
+public static void main(String[] args) {
+	String path="C:\\Users\\seed\\Desktop\\outputstram\\data.txt";
+	File file=new File(path);
+	System.out.println("filenname:  "+file.getName());
+	System.out.println("file length: "+file.length());
+	System.out.println("file path:  "+file.getPath());
+	
+	
+}
+}

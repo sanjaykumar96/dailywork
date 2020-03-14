@@ -1,0 +1,30 @@
+package com.cognizant;
+import java.util.*;
+
+public class Count1s {
+	public static void main(String[] args) {
+		Scanner src=new Scanner(System.in);
+		System.out.println("enter number 1s number:  ");
+		int n=src.nextInt();
+		System.out.println("enter number 2nd number:  ");
+		int m=src.nextInt();
+		int i,result=0;
+		while (n <= m) 
+	    { 
+			
+	        if (n%10 == 1) 
+	            result++; 
+	        
+	        
+	  n++;
+	        
+	       
+	    } 
+	   
+	 System.out.println("total:  "+result);
+	} 
+			
+		
+	
+
+}

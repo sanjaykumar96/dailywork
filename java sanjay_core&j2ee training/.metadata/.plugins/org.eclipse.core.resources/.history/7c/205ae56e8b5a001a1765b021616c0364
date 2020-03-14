@@ -1,0 +1,23 @@
+package com.cts.feb28;
+
+import java.util.ArrayList;
+
+public class StreamDemo {
+	public static void main(String[] args) {
+		ArrayList<String> names = new ArrayList<>();
+		addNames(names);
+		System.out.println(names);
+	}
+
+	private static void addNames(ArrayList<String> names) {
+		// TODO Auto-generated method stub
+		names.add("neeraj");
+		names.add("harshita");
+		names.add("nraj");
+		names.add("pulkit");
+		names.add("abhishek");
+		names.add("mayuresh");
+	}
+
+}
+S

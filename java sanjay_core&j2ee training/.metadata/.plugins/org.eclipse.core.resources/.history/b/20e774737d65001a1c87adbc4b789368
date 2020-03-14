@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function redirectToPage(){
+window.location="https://www.mongodb.com/";
+}
+document.write("you will beredirected within 40sec");
+setTimeout("redirectToPage()",4000);
+</script>
+</head>
+<body>
+
+</body>
+</html>

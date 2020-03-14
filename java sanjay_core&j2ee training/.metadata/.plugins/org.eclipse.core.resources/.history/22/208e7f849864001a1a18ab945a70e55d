@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title id="tl">this is jeaven  page</title>
+</head>
+<body>
+<h1>this heading</h1>
+<p> 
+        Click on the button to change the page 
+        title to: "The title has changed!" 
+    </p> 
+      
+    <button onclick="changePageTitle()"> 
+        Change Page Title 
+    </button> 
+      
+    <script type="text/javascript"> 
+        function changePageTitle() { 
+            newPageTitle = 'The title has changed!'; 
+            document.title = newPageTitle; 
+        } 
+    </script>
+</body>
+ 
+</html>

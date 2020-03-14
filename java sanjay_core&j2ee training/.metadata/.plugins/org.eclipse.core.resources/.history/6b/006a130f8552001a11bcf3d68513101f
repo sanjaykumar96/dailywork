@@ -1,0 +1,13 @@
+package com.cognizant;
+
+public class Test {
+	public static void main(String[] args)
+	{
+		Imp e=new Imp();
+		System.out.println(e.add(2,3));
+		System.out.println(e.add(3,2));
+		
+		 
+	}
+
+}
